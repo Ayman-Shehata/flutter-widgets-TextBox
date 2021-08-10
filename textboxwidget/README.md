@@ -4,13 +4,13 @@ Flutter widget example
 
 ## Getting Start
 1- TextBox>
-    - hintingText       => نص التلميح
-    - label             => عنوان مربع النص
-    - textType          => نوع لوحة المفاتيح
-    - preIcon           => أيقونة بداية النص
-    - borderCircular    => حجم التفاف الإطار
-    - focusBorderColor  => لون الإطار
-    - myController      => TextEditingController
+    - hintingText       => نص التلميح </br>
+    - label             => عنوان مربع النص</br>
+    - textType          => نوع لوحة المفاتيح</br>
+    - preIcon           => أيقونة بداية النص</br>
+    - borderCircular    => حجم التفاف الإطار</br>
+    - focusBorderColor  => لون الإطار</br>
+    - myController      => TextEditingController</br>
 
     Example:
     
