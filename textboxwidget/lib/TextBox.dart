@@ -18,6 +18,8 @@ class TextBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool _validate = false;
+
     return TextFormField(
       keyboardType: textType,
       decoration: InputDecoration(
@@ -25,6 +27,7 @@ class TextBox extends StatelessWidget {
         border: OutlineInputBorder(),
         hintText: hintingText,
         labelText: label,
+        errorText: _validate ? 'Value Can\'t Be Empty' : null,
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(
             color: Colors.black,

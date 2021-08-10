@@ -42,7 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            TextBox(hintingText: 'hintingText', label: 'label'),
+            TextBox(
+              hintingText: 'hintingText',
+              label: 'label',
+              textType: TextInputType.number,
+              preIcon: Icons.phone,
+            ),
           ],
         ),
       ),
