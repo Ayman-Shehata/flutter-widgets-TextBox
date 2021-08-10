@@ -6,7 +6,7 @@ class TextBox extends StatelessWidget {
   final TextEditingController? myController;
   final TextInputType? textType;
   final IconData? preIcon;
-  final Color? focusBorderColor;
+  final Color focusBorderColor;
   final double borderCircular;
 
   const TextBox({
@@ -15,18 +15,22 @@ class TextBox extends StatelessWidget {
     @required this.label,
     this.textType,
     this.preIcon,
-    this.focusBorderColor,
+    //Default Value blue
+    this.focusBorderColor = Colors.blue,
+    //Default Value 12
     this.borderCircular = 12,
     this.myController,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+//Validation
     bool _validate = false;
 
+//TextFormField
     return TextFormField(
       keyboardType: textType,
-      cursorColor: focusBorderColor, // Colors.yellow[300],
+      cursorColor: focusBorderColor,
       decoration: InputDecoration(
         prefixIcon: Icon(preIcon),
         border: OutlineInputBorder(),
@@ -35,7 +39,7 @@ class TextBox extends StatelessWidget {
         errorText: _validate ? '* مطلوب' : null,
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.blue, // Colors.blue,
+            color: focusBorderColor, // Colors.blue by default,
             width: 2.0,
           ),
           borderRadius: BorderRadius.circular(borderCircular),
